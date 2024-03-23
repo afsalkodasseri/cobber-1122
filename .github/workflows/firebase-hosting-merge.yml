@@ -17,3 +17,7 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COBBER_1122 }}'
           channelId: live
           projectId: cobber-1122
+          
+      - name: Run send2
+        run: node send_new
+        working-directory: node
